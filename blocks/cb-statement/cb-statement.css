@@ -1,0 +1,30 @@
+/*
+ * cb-statement: one display-size line on an immersive section
+ * Ralph Lauren tokens only (DESIGN.md § Components, Statement).
+ */
+
+main .section.cb-statement-container.black {
+  padding: calc(var(--section-spacing) * 2) 0;
+}
+
+.cb-statement {
+  text-align: center;
+}
+
+.cb-statement .cb-statement-content {
+  max-width: var(--text-max-width);
+  margin: 0 auto;
+}
+
+.cb-statement .cb-statement-line {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: var(--display-font-size);
+  font-weight: 400;
+  line-height: var(--line-height-heading);
+  text-transform: none;
+}
+
+.cb-statement .cb-statement-attribution {
+  margin-top: var(--spacing-lg);
+}

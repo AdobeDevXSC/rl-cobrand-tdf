@@ -1,0 +1,22 @@
+{
+  "variantName": "cb-statement",
+  "baseBlock": "cb-statement",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "one display-size line with an optional attribution, used as a title card between content sections",
+    "typography": "heading font at the display size (60px desktop / 40px mobile), weight 400; attribution in the body font",
+    "source": [
+      "DESIGN.md § Components (Cinematic direction, Ralph Lauren × Tour de France)"
+    ]
+  },
+  "contentPattern": {
+    "structure": "one cell: the statement (heading or paragraph), then an optional attribution paragraph",
+    "rows": [
+      "statement + attribution"
+    ]
+  },
+  "options": [],
+  "usage": "Black title-card sections on the homepage, Collection, Merchandising and Ordering & Contact pages.",
+  "reuseGuidance": "Put the block in its own section with the section style 'center, black'. Keep the line short (one sentence). Quotes need their quote marks typed, and only use real, attributable quotes.",
+  "memberVariantIds": []
+}

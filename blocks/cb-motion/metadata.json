@@ -1,0 +1,20 @@
+{
+  "variantName": "cb-motion",
+  "baseBlock": "cb-motion",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "page-level Cinematic motion register: hero pan, title rise, finish-line title bar, scroll reveals and image settle",
+    "typography": "none (renders nothing)",
+    "source": [
+      "DESIGN.md § Motion (Cinematic direction, Ralph Lauren × Tour de France)"
+    ]
+  },
+  "contentPattern": {
+    "structure": "an empty single-cell block table",
+    "rows": []
+  },
+  "options": [],
+  "usage": "Once per page, in the first section directly after the hero, on every Cinematic page.",
+  "reuseGuidance": "Leave the cell empty. Place it in the hero's section so the motion is ready before the page shows. It is off for visitors who prefer reduced motion and never animates logos or primary buttons.",
+  "memberVariantIds": []
+}

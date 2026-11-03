@@ -12,20 +12,24 @@
  * - Every accent/contrast pair must pass WCAG AA (4.5:1 for text, 3:1 for
  *   large text and UI marks).
  * - Use hex values; no gradients.
+ *
+ * Partner: Tour de France (brand/cobrand/partner.json). Tour yellow #ffff00
+ * fails on white (1.07:1), so the accent is a deepened "maillot gold" and
+ * pure yellow appears only over darkened photography.
  */
 
 :root {
-  /* partner accent: highlight bars, CTA rules, accent sections */
-  --cobrand-accent: var(--rl-navy);
+  /* partner accent: highlight bars, CTA rules, accent sections (3.24:1 on white) */
+  --cobrand-accent: #b08a00;
 
-  /* text / UI colour that sits on --cobrand-accent */
-  --cobrand-accent-contrast: var(--rl-white);
+  /* text / UI colour that sits on --cobrand-accent (navy, 5.18:1) */
+  --cobrand-accent-contrast: var(--rl-navy);
 
-  /* quiet partner-tinted ground for "cobrand" sections */
-  --cobrand-accent-soft: var(--rl-off-white);
+  /* quiet partner-tinted ground for "cobrand" sections (navy 15.63:1) */
+  --cobrand-accent-soft: #fff8cc;
 
-  /* accent used over photography (hero, teaser overlays) */
-  --cobrand-accent-on-image: var(--rl-white);
+  /* accent used over photography: Tour de France yellow (6.52:1 on #595959) */
+  --cobrand-accent-on-image: #ff0;
 
   /* header / footer partner lockup */
   --cobrand-divider-color: var(--border-color);
