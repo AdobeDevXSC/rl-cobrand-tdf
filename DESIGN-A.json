@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-03T00:00:00Z",
+  "title": "Design System: Ralph Lauren × Tour de France · A · Flagship",
+  "_provenance": {
+    "source": "Example A · Flagship (stardust/prototypes/tour-de-france-home-A-proposed.html)",
+    "extends": "brand/rl/DESIGN.json",
+    "role": "Example direction. Inherits and never overrides the locked Ralph Lauren standard; partner values live in styles/cobrand.css."
+  },
+  "extensions": {
+    "colorMeta": {
+      "cobrand-accent": {
+        "role": "accent",
+        "displayName": "Maillot Gold",
+        "canonical": "#b08a00",
+        "cssVar": "--cobrand-accent",
+        "usage": "CTA rules on cobrand teasers, cobrand-accent band ground",
+        "contrast": {
+          "onWhite": 3.24
+        }
+      },
+      "cobrand-accent-contrast": {
+        "role": "on-accent",
+        "displayName": "RL Navy",
+        "canonical": "#031e3a",
+        "cssVar": "--cobrand-accent-contrast",
+        "contrast": {
+          "onAccent": 5.18
+        }
+      },
+      "cobrand-accent-soft": {
+        "role": "accent-ground",
+        "displayName": "Jaune Tint",
+        "canonical": "#fff8cc",
+        "cssVar": "--cobrand-accent-soft",
+        "contrast": {
+          "navyOn": 15.63
+        }
+      },
+      "cobrand-accent-on-image": {
+        "role": "accent-on-image",
+        "displayName": "Tour Yellow",
+        "canonical": "#ffff00",
+        "cssVar": "--cobrand-accent-on-image",
+        "contrast": {
+          "onDarkenedImage": 6.52
+        }
+      }
+    },
+    "variant": {
+      "id": "A",
+      "name": "Flagship",
+      "role": "Faithful to the Ralph Lauren standard; partner present but quiet",
+      "homepageComposition": [
+        "hero cobrand",
+        "programme intro (center, narrow)",
+        "columns: Capsule, Performance Layers, Merchandising",
+        "quote",
+        "teaser cobrand: ordering",
+        "contact (center, narrow, cobrand)"
+      ]
+    }
+  }
+}

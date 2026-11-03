@@ -1,0 +1,91 @@
+/*
+ * Example C · Cinematic: prototype layers.
+ * Would ship as cb-statement (block) and cb-motion (lazy enhancement).
+ * Tokens only; see DESIGN-C.md § Motion and § Components.
+ */
+
+/* cb-statement: one display-size line on an immersive black section */
+main .section.statement h2 {
+  font-size: var(--display-font-size);
+  line-height: var(--line-height-heading);
+  margin: 0 auto;
+  max-width: var(--text-max-width);
+}
+
+main .section.statement p {
+  margin-top: var(--spacing-lg);
+}
+
+main .section.statement.black {
+  padding: calc(var(--section-spacing) * 2) 0;
+}
+
+/* cb-motion: only when the visitor allows motion */
+@media (prefers-reduced-motion: no-preference) {
+  /* the peloton rolls past: a slow lateral pan behind the title */
+  .hero.cine picture img {
+    animation: cine-pass 30s linear both;
+    transform-origin: 50% 50%;
+  }
+
+  .hero.cine :is(h1, p) {
+    animation: cine-rise 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .hero.cine p {
+    animation-delay: 0.6s;
+  }
+
+  /* the yellow bar under the title draws in like a finish line */
+  .hero.cine.cobrand .hero-content :is(h1, h2)::after {
+    animation: cine-draw 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) 0.9s both;
+    transform-origin: 50% 50%;
+  }
+
+  html.cine-ready main .cine-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 1.1s cubic-bezier(0.2, 0.7, 0.2, 1), transform 1.1s cubic-bezier(0.2, 0.7, 0.2, 1);
+    transition-delay: var(--cine-delay, 0s);
+  }
+
+  html.cine-ready main .cine-reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  html.cine-ready main .cine-settle {
+    overflow: hidden;
+  }
+
+  html.cine-ready main .cine-settle img {
+    transform: scale(1.08) translateX(-2%);
+    transition: transform 2.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  html.cine-ready main .cine-settle.is-in img {
+    transform: none;
+  }
+}
+
+@keyframes cine-pass {
+  from { transform: scale(1.14) translateX(-4%); }
+  to { transform: scale(1.14) translateX(4%); }
+}
+
+@keyframes cine-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes cine-draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}

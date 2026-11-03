@@ -1,0 +1,38 @@
+{
+  "_comment": "Partner record for the Ralph Lauren × Tour de France microsite. Rules: brand/rl/COBRAND-RULES.md.",
+  "partner": {
+    "name": "Tour de France",
+    "slug": "tour-de-france",
+    "website": "https://www.letour.fr/en/",
+    "programme": "Ralph Lauren × Tour de France capsule collection launch for the 2027 Tour (wholesale)",
+    "audience": "Wholesale and retail buyers and their store teams"
+  },
+  "source": {
+    "type": "url",
+    "url": "https://www.letour.fr/en/",
+    "capturedAt": "2026-11-03",
+    "notes": "Quick capture of the partner homepage at 1440px. Brand yellow #ffff00 (rgb 255,255,0) on near-black grounds (#191919); partner typefaces Galibier and Open Sans (not used: COBRAND-RULES § 3 forbids partner typefaces). Logo files taken from letour.fr (/img/global/logo@2x.png and logo-reversed@2x.png, 160×124 PNG); ask A.S.O. for the approved SVG lockup before building."
+  },
+  "logos": {
+    "primary": "brand/cobrand/logos/tour-de-france-logo.png",
+    "onDark": "brand/cobrand/logos/tour-de-france-logo-white.png",
+    "alt": "Tour de France"
+  },
+  "colors": {
+    "accent": "#b08a00",
+    "accentContrast": "#031e3a",
+    "accentSoft": "#fff8cc",
+    "accentOnImage": "#ffff00",
+    "_notes": "Tour de France yellow #ffff00 reaches only 1.07:1 on white, so the accent is a deepened 'maillot gold' that keeps the yellow hue. Pure yellow is used only over darkened photography (accentOnImage). One hue in total (yellow), in three strengths."
+  },
+  "contrastChecks": {
+    "accentOnWhite": "3.24:1 (#b08a00 on #ffffff, target 3:1)",
+    "accentContrastOnAccent": "5.18:1 (RL Navy #031e3a on #b08a00, target 4.5:1)",
+    "navyOnAccentSoft": "15.63:1 (#031e3a on #fff8cc, target 4.5:1)",
+    "accentOnImage": "6.52:1 (#ffff00 on #595959 darkened image, target 3:1)"
+  },
+  "approvals": {
+    "partnerBrandTeam": null,
+    "ralphLaurenBrandTeam": null
+  }
+}
